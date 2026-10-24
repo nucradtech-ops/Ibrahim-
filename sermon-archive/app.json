@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "أرشيف الخطب",
+    "slug": "sermon-archive",
+    "scheme": "sermonarchive",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "backgroundColor": "#FBF8F0",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.arshifalkhutab.app",
+      "infoPlist": {
+        "CFBundleAllowMixedLocalizations": true,
+        "UIFileSharingEnabled": true,
+        "LSSupportsOpeningDocumentsInPlace": true
+      }
+    },
+    "android": {
+      "package": "com.arshifalkhutab.app",
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "backgroundColor": "#0F4D3A",
+        "foregroundImage": "./assets/adaptive-icon.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 220,
+          "resizeMode": "contain",
+          "backgroundColor": "#0F4D3A"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
